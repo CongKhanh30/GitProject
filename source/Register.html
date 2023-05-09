@@ -7,19 +7,28 @@
         .fontF{
             font-family: "Times New Roman";
         }
+        form{
+            padding: 10px;
+        }
+        label{
+            font-size: 20px;
+        }
+        input{
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
 <form method="post" action="http://demo.codegym.vn/6/registration_form/register.php" class="fontF">
-    <label for="name">Họ và tên:<label/> <br/>
-    <input type="text" id="name" name="name"> <br/><br/>
+    <label for="name"><b>Họ và tên:<b/><label/> <br/>
+    <input type="text" id="name" name="name"> <br/>
     <label for="email">Email:</label> <br/>
-    <input type="text" id="email" name="email"> <br/><br/>
+    <input type="text" id="email" name="email"> <br/>
     <label for="phone">Số điện thoại:<label/> <br/>
-    <input type="tel" id="phone" name="phone"> <br/><br/>
+    <input type="tel" id="phone" name="phone"> <br/>
     <label for="gender">Giới tính:</label> <br/>
     <input type="radio" id="gender" name="gender" checked /> Nam
-    <input type="radio" name="gender"/> Nữ <br/><br/>
+    <input type="radio" name="gender"/> Nữ <br/>
     <label for="submit"><input type="submit" id="submit" value="Đăng ký"> </label>
 </form>
 </body>
