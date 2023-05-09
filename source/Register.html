@@ -11,16 +11,16 @@
 </head>
 <body>
 <form method="post" action="http://demo.codegym.vn/6/registration_form/register.php" class="fontF">
-    <p>Họ và tên:<p/>
-    <input type="text" name="name"> <br/>
-    <p>Email:</p>
-    <input type="text" name="email"> <br/>
-    <p>Số điện thoại:<p/>
-    <input type="tel" name="phone"> <br/>
-    <p>Giới tính:</p>
-    <input type="radio" name="gender" checked /> Nam
-    <input type="radio" name="gender"/> Nữ <br/>
-    <p><input type="submit" value="Đăng ký"> </p>
+    <label for="name">Họ và tên:<label/> <br/>
+    <input type="text" id="name" name="name"> <br/><br/>
+    <label for="email">Email:</label> <br/>
+    <input type="text" id="email" name="email"> <br/><br/>
+    <label for="phone">Số điện thoại:<label/> <br/>
+    <input type="tel" id="phone" name="phone"> <br/><br/>
+    <label for="gender">Giới tính:</label> <br/>
+    <input type="radio" id="gender" name="gender" checked /> Nam
+    <input type="radio" name="gender"/> Nữ <br/><br/>
+    <label for="submit"><input type="submit" id="submit" value="Đăng ký"> </label>
 </form>
 </body>
 </html>
