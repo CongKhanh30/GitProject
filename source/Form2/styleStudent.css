@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 500px;
+    background-color: #FFFDA9;
+    padding: 5px;
+}
+.form-header{
+    background-color: #a3fea8;
+    font-size: 20px;
+    height: 30px;
+    text-align: left;
+    line-height: 30px;
+}
+.form-body--info{
+    line-height: 2;
+}
+.form-body--info .form-label{
+    text-align: left;
+    display: inline-block;
+    width: 90px;
+}
+.form-body--info input{
+    height: 24px;
+}
+.form-body--info #yourname{
+    width: 200px;
+}
+.select-class{
+    cursor: pointer;
+}
+.form-body--info #adress{
+    height: 50px;
+    width: 180px;
+}
+.form-body--button{
+    margin-left: 94px;
+}
+.form-label--address{
+    display: inline-flex;
+    width: 100%;
+}
+.text-address{
+    width: 90px;
+}
+.btn{
+    width: 70px;
+    height: 25px;
+}

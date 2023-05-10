@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký học viên</title>
+    <link rel="stylesheet" href="styleStudent.css">
+</head>
+<body>
+<div class="container">
+    <div class="form-header">
+        <P>ĐĂNG KÝ HỌC VIÊN</P>
+    </div>
+    <Form class="Form-body" action="">
+
+        <div class="form-body--info">
+            <label for="yourname" class="form-label">Họ và tên</label>
+            <input type="text" name="yourname" id="yourname" class="form-input" required>
+
+            <br><label for="birthday" class="form-label">Ngày sinh</label>
+            <input type="date" name="email" id="birthday" class="form-input" required>
+
+            <br><label for="" class="form-label">Giới tính</label>
+            <input type="radio" name="birthday" id="male" class="form-input" required>
+            <span for="male">Nam</span>
+            <input type="radio" name="birthday" id="female" class="form-input" required>
+            <span for="female">Nữ</span>
+
+            <div class="form-label--address">
+                <label for="adress" class="text-address">Địa chỉ</label>
+                <textarea  id="adress" required></textarea>
+            </div>
+
+            <label for="" class="form-label">Lớp</label>
+            <select class="select-class">
+                <option value="class">-Chọn lớp-</option>
+                <option value="class">Lớp 10</option>
+                <option value="class">Lớp 11</option>
+                <option value="class">Lớp 12</option>
+            </select>
+
+            <br><label for="email" class="form-label">Email</label>
+            <input type="Email" name="email" id="email" class="form-input" required>
+
+            <br><label for="phone" class="form-label">Điện thoại</label>
+            <input type="tel" name="phone" id="phone" class="form-input" required>
+
+            <div class="form-body--button">
+                <button type="submit" class="btn btn-login">Đăng ký</button>
+                <button type="reset" class="btn btn-reset">Nhập lại</button>
+            </div>
+        </div>
+    </Form>
+</div>
+</body>
+</html>
