@@ -3,30 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <title>Market Research Survey</title>
+    <link rel="stylesheet" href="stylesurvey.css">
+    <link rel="shortcut icon"
+          href="https://media.istockphoto.com/id/517304054/vi/anh/ch%E1%BB%AF-w-nh%C6%B0-m%E1%BB%99t-v%E1%BA%ADt-th%E1%BB%83-b%E1%BA%B1ng-v%C3%A0ng-%C4%91%C6%B0%E1%BB%A3c-%C4%91%C3%A1nh-b%C3%B3ng.jpg?s=612x612&w=is&k=20&c=ptaWBZlVmXu1wyEU2pIazCZouWwG9WfFcRiUq9LfSqM="
+          type="image/x-icon">
 </head>
-<body>
+<body class="body">
    <h2>Market Research Survey</h2>
-   <p>Please take a few moments to complete this satisfaction survey.</p>
+   <p id="h">Please take a few moments to complete this satisfaction survey.</p>
    <hr/>
-   <p>What is your age range?</p>
-   <select>
-       <option value="">18-24</option>
-       <option value="">25-34</option>
-       <option value="">35-50</option>
-       <option value="">50+</option>
-   </select>
-   <p>What is your yearly income range?</p>
-   <select>
-       <option value="">$0-$25,000</option>
-       <option value="">$25,001-$50,000</option>
-       <option value="">$50,001-$100,000</option>
-       <option value="">$100,000+</option>
-   </select>
-   <p>Gender Identity</p>
-   <input type="radio" name="gender" checked /> Male <br/>
-   <input type="radio" name="gender"/> Female <br/>
-   <input type="radio" name="gender"/> Nonbinary <br/>
-   <input type="radio" name="gender"/> Other <br/>
-   <input type="text">
+   <div class="title">
+           <p>What is your age range?</p>
+   </div>
+   <div class="content">
+       <select class="select-css">
+           <option value="">18-24</option>
+           <option value="">25-34</option>
+           <option value="">35-50</option>
+           <option value="">50+</option>
+       </select>
+   </div>
+
+   <div class="title">
+       <p>What is your yearly income range?</p>
+   </div>
+   <div class="content">
+       <select class="select-css">
+           <option value="">$0-$25,000</option>
+           <option value="">$25,001-$50,000</option>
+           <option value="">$50,001-$100,000</option>
+           <option value="">$100,000+</option>
+       </select>
+   </div>
+
+   <br/>
+   <div class="title">
+       <label for="gender">Gender Identity</label>
+   </div>
+   <div class="content">
+       <input type="radio" id="gender" name="gender" checked /> Male <br/>
+       <input type="radio" id="gender" name="gender"/> Female <br/>
+       <input type="radio" id="gender" name="gender"/> Nonbinary <br/>
+       <input type="radio" id="gender" name="gender"/> Other <br/>
+       <input id="other" type="text"> <br/>
+   </div>
+   <div class="title">
+       <label>Which of the following products have your purchased in the last 2 months. Please check all that apply.</label><br/>
+   </div>
+   <div class="content">
+       <input type="checkbox" name="product" /> Product 1 <br/>
+       <input type="checkbox" name="product" /> Product 2 <br/>
+       <input type="checkbox" name="product" /> Product 3 <br/>
+   </div>
+   <div class="title">
+       <label>How often would you use our new product?</label><br/>
+   </div>
+   <div class="content">
+       <input type="radio" name="product1" /> Daily <br/>
+       <input type="radio" name="product1" /> Weekly <br/>
+       <input type="radio" name="product1" /> Monthly <br/>
+   </div>
+   <div class="title">
+       <label>What would you pay for the new product?</label><br/>
+   </div>
+    $ <input type = "text" name="money" size="5"/> .
+   <input type = "text" name="money" size="1"/><br/>
+    <label id="D">Dollars</label> <label id="C">Cents</label>
+
 </body>
 </html>
