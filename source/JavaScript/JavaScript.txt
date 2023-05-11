@@ -1,0 +1,3 @@
+1. Hàm alert() trong JavaScript được sử dụng để hiển thi hộp thoại cảnh báo khi muốn đảm bảo thông tin đến với người dùng. 
+Khi hộp thoại cảnh báo hiện lên, người dùng sẽ phải nhấp vào nút “OK” để tiếp tục. 
+Hộp thoại cảnh báo sẽ lấy tiêu điểm ra khỏi cửa sổ hiện tại và buộc trình duyệt phải đọc cảnh báo đó.

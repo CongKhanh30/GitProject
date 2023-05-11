@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OnChane</title>
+</head>
+<body>
+    <p>Select a new car from the list.</p>
+    <select id="mySelect">
+<!--        onchange="do_something()" su kien onchange-->
+        <option value="Audi">Audi</option>
+        <option value="Porsche">Porsche</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Lamborghini">Lamborghini</option>
+        
+    </select>
+    <script>
+        // function do_something(){
+        //     var selectedValue = document.getElementById("mySelect").value;
+        //     alert(selectedValue);
+        // }
+        var selectedValue = document.getElementById("mySelect")
+        selectedElement.addEventListener("change",changeFunction);
+        function changeFuntion(){
+            var selectValue = document.getElementById("mySelect").value;
+            alert(selectValue);
+        }
+    </script>
+</body>
+</html>

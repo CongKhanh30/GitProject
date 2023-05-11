@@ -1,0 +1,50 @@
+.calendar{
+    width: 660px;
+}
+table{
+    border-collapse: collapse;
+}
+h1{
+    text-align: center;
+}
+td{
+    width: 90px;
+    height: 45px;
+    border: 2px solid #BABABA;
+    text-align: center;
+    font-size: 20px;
+}
+sub{
+    font-size: 14px;
+}
+.textcolor td{
+    color: white;
+    background-color: orange;
+    border: none;
+}
+
+.text-sub td{
+    border: none;
+}
+.text-sub td:first-child{
+    color:red;
+}
+.text-sub td:last-child{
+    color:blue;
+}
+.textcolor td:first-child{
+    background-color: red;
+}
+.textcolor td:last-child{
+    background-color: Blue;
+}
+.Color-number td:first-child{
+    color:red;
+}
+.Color-number td:last-child{
+    color:blue;
+}
+.Color-number sub{
+    color:black;
+    font-size: 12px;
+}
