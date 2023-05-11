@@ -5,9 +5,17 @@
     <title>ONMOUSE</title>
 </head>
 <body>
-    <p onmouseover="mouseover()">Thiên thượng địa hạ. Duy ngã độc tôn</p>
+    <p  id="demo">Thiên thượng địa hạ. Duy ngã độc tôn</p>
     <script>
-
+        var demo = document.getElementById("demo")
+        demo.addEventListener("mouseover",mouseover);
+        demo.addEventListener("mouseout",mouseout);
+        function mouseover(){
+            document.getElementById("demo").style.color="yellow";
+        }
+        function mouseout(){
+            document.getElementById("demo").style.color="black"
+        }
     </script>
 </body>
 </html>

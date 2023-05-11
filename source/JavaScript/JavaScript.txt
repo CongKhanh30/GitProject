@@ -1,3 +1,26 @@
 1. Hàm alert() trong JavaScript được sử dụng để hiển thi hộp thoại cảnh báo khi muốn đảm bảo thông tin đến với người dùng. 
 Khi hộp thoại cảnh báo hiện lên, người dùng sẽ phải nhấp vào nút “OK” để tiếp tục. 
 Hộp thoại cảnh báo sẽ lấy tiêu điểm ra khỏi cửa sổ hiện tại và buộc trình duyệt phải đọc cảnh báo đó.
+2. Function (hàm, chức năng), gọi chung là subprogram (chương trình con) có thể được gọi ở bên ngoài hoặc bên trong chính nó.
+Nó bao gồm tập hợp các câu lệnh gọi là function body. 
+Các giá trị có thể truyền đến một hàm, 
+và một hàm có thể trả về giá trị. 
+
+Thuộc tính:
+id: Định danh – là duy nhất cho mỗi phần tử nên thường được dùng để truy xuất DOM trực tiếp và nhanh chóng.
+className: Tên lớp – Cũng dùng để truy xuất trực tiếp như id, nhưng 1 className có thể dùng cho nhiều phần tử.
+tagName: Tên thẻ HTML.
+innerHTML: Trả về mã HTML bên trong phần tử hiện tại. Đoạn mã HTML này là chuỗi kí tự chứa tất cả phần tử bên trong, bao gồm các node phần tử và node văn bản.
+outerHTML: Trả về mã HTML của phần tử hiện tại. Nói cách khác, outerHTML = tagName + innerHTML.
+textContent: Trả về 1 chuỗi kí tự chứa nội dung của tất cả node văn bản bên trong phần tử hiện tại.
+attributes: Tập các thuộc tính như id, name, class, href, title…
+style: Tập các định dạng của phần tử hiện tại
+value: Lấy giá trị của thành phần được chọn thành một biến.
+Phương thức:
+getElementById(id): Tham chiếu đến 1 node duy nhất có thuộc tính id giống với id cần tìm.
+getElementsByTagName(tagname): Tham chiếu đến tất cả các node có thuộc tính tagName giống với tên thẻ cần tìm, hay hiểu đơn giản hơn là tìm tất cả các phần tử DOM mang thẻ HTML cùng loại. Nếu muốn truy xuất đến toàn bộ thẻ trong tài liệu HTML thì hãy sử dụng document.getElementsByTagName('*').
+getElementsByName(name): Tham chiếu đến tất cả các node có thuộc tính name cần tìm.
+getAttribute(attributeName): Lấy giá trị của thuộc tính.
+setAttribute(attributeName, value): Sửa giá trị của thuộc tính.
+appendChild(node): Thêm 1 node con vào node hiện tại.
+removeChild(node): Xóa 1 node con khỏi node hiện tại.
