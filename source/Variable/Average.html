@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Average</title>
+</head>
+<body>
+<p>Điểm Vật lý</p>
+<input  type="number" value="physic" id="physic" placeholder="Nhập điểm Lý">
+<p>Điểm Hóa học</p>
+<input  type="number" value="chemistry" id="chemistry" placeholder="Nhập điểm Hóa">
+<p>Điểm Sinh học</p>
+<input  type="number" value="biology" id="biology" placeholder="Nhập điểm Sinh">
+<br>
+<br><button type="button" value="button" onclick="average()"> Tính </button>
+<br>
+</body>
+<script>
+
+    document.write('<br>');
+
+    function average(){
+
+        let score_physic = document.getElementById('physic').valueAsNumber;
+        let score_chemistry = document.getElementById('chemistry').valueAsNumber;
+        let score_biology = document.getElementById('biology').valueAsNumber;
+
+        let average = (score_physic + score_chemistry + score_biology) / 3;
+
+        let str = document.documentElement.innerHTML;
+        document.documentElement.innerHTML = str + "Điểm Trung bình là: " + average;
+
+
+    }
+
+</script>
+</html>
