@@ -2,45 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MONEY</title>
+    <title>Money</title>
+    <style>
+        td{
+            padding-left: 15px;
+            text-align: center;
+            width: 100px;
+        }
+        select{
+            width: 100px;
+        }
+        button{
+            width: 70px;
+
+        }
+    </style>
 </head>
 <body>
-<div class="wrapper">
-    <form action="#">
-        <div class="amount">
-            <p>Amount</p>
-            <input type="number">
-        </div>
-        <div class="drop-list">
-            <div class="from">
-                <p>From Currency</p>
-                <div class="select-box">
-                    <select>
-                        <option value="VND">VND</option>
-                        <option value="USD">USD</option>
-                    </select>
-                </div>
-            </div>
-            <div class="icon"><i class="fas fa-exchange-alt"></i></div>
-            <div class="to">
-                <p>To Currency</p>
-                <div class="select-box">
-                    <select>
-                        <option value="USD">USD</option>
-                        <option value="VND">VND</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="exchange-rate">Getting exchange rate</div>
-        <button>Convert</button>
-    </form>
-</div>
+<table>
+    <tr>
+        <td><label for="amount">Amount</label></td>
+        <td><p>From Currency</p></td>
+        <td><p>To Currency</p></td>
+    </tr>
+    <tr>
+        <td><input  type="number" value="amount" id="amount" placeholder="Nhập số"></td>
+        <td>
+            <select id="FromCurrency">
+                <option value="VND">Việt Nam Đồng</option>
+                <option value="USD">Đô La Mỹ</option>
+                <option value="JPY">Yên Nhật</option>
+            </select>
+        </td>
 
-
-
+        <td>
+            <select id="ToCurrency">
+                <option value="USD">Đô La Mỹ</option>
+                <option value="VND">Việt Nam Đồng</option>
+                <option value="JPY">Yên Nhật</option>
+            </select>
+        </td>
+        <td>
+            <button type="button" value="button" onclick="BtnCurrency()"> Convert  </button>
+        </td>
+    </tr>
+</table>
+<p id="Result"></p>
 </body>
-
 </html>
 
 <script src="Money.js"></script>
