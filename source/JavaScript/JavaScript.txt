@@ -24,3 +24,5 @@ getAttribute(attributeName): Lấy giá trị của thuộc tính.
 setAttribute(attributeName, value): Sửa giá trị của thuộc tính.
 appendChild(node): Thêm 1 node con vào node hiện tại.
 removeChild(node): Xóa 1 node con khỏi node hiện tại.
+
+https://morioh.com/p/b5a99ac5ec72
