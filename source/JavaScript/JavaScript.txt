@@ -1,3 +1,6 @@
+Debugger tại 1 vị trí cụ thể trong code, 
+sau đó ra trình duyệt f12 để mở và f5 sau đó chạy chương trình
+
 1. Hàm alert() trong JavaScript được sử dụng để hiển thi hộp thoại cảnh báo khi muốn đảm bảo thông tin đến với người dùng. 
 Khi hộp thoại cảnh báo hiện lên, người dùng sẽ phải nhấp vào nút “OK” để tiếp tục. 
 Hộp thoại cảnh báo sẽ lấy tiêu điểm ra khỏi cửa sổ hiện tại và buộc trình duyệt phải đọc cảnh báo đó.
@@ -26,3 +29,13 @@ appendChild(node): Thêm 1 node con vào node hiện tại.
 removeChild(node): Xóa 1 node con khỏi node hiện tại.
 
 https://morioh.com/p/b5a99ac5ec72
+
+Keycode trong KeyBoardEvent: https://openplanning.net/12319/javascript-keyboardevent
+Mỗi phím (key) trên bàn phím đều có một số đại diện cho nó, được gọi là keyCode. 
+Chẳng hạn phím 'a' có keyCode = 65. 
+Không có khái niệm chữ hoa chữ thường đối với phím. 
+Vì vậy keyCode của 'a' hoặc 'A' đều là 65.
+37	left arrow
+38	up arrow
+39	right arrow
+40	down arrow

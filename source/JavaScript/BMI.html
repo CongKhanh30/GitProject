@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI</title>
+</head>
+<body>
+<h1>Tính chỉ số cân nặng</h1>
+<p>Nhập cân nặng: (kg)</p>
+<input type="text" id="weight" >
+<p>Nhập chiều cao: (m)</p>
+<input type="text" id="height" >
+<br>
+<br><button type="button" onclick="check()" value="Summit">Kiểm tra</button>
+<br><p id="result"></p>
+</body>
+
+<script>
+    function check(){
+        // parseFloat chuyển từ chuỗi(string) sang số (number)
+        let weight = parseFloat(document.getElementById("weight").value);
+        let height = parseFloat(document.getElementById("height").value);
+        let BMI = weight / ( height * height );
+
+
+        if (BMI < 18.5)
+            document.getElementById("result").textContent = "Chỉ số BMI là: " + BMI + " bạn Gầy";
+        else if (BMI < 25.0)
+            document.getElementById("result").textContent = "Chỉ số BMI là: " + BMI + " bạn Bình thường";
+        else if (BMI < 30.0)
+            document.getElementById("result").textContent = "Chỉ số BMI là: " + BMI + " bạn Thừa cân";
+        else
+            document.getElementById("result").textContent = "Chỉ số BMI là: " + BMI + " bạn Béo phì";
+
+    }
+</script>
+</html>
