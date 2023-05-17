@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số max</title>
+</head>
+<body>
+<h1>Tìm giá trị lớn nhất</h1>
+<p>Nhập số thứ nhất</p>
+<input id="number1" type="number">
+<p>Nhập số thứ hai</p>
+<input id="number2" type="number">
+<p>Nhập số thứ 3</p>
+<input id="number3" type="number">
+<br><button type="button" onclick="check()" value="Summit">Check</button>
+<br><p id="result"></p>
+
+<script>
+    function check(){
+        let number1 = document.getElementById("number1").valueAsNumber;
+        let number2 = document.getElementById("number2").valueAsNumber;
+        let number3 = document.getElementById("number3").valueAsNumber;
+        if (number1 >= number2 && number1 >= number3)
+        {
+            document.getElementById("result").innerHTML ="Số lớn nhất là: " + number1;
+        }
+        else if (number2 >= number1 && number2 >= number3)
+        {
+            document.getElementById("result").innerHTML ="Số lớn nhất là: " + number2;
+        }
+        else
+        {
+            document.getElementById("result").innerHTML ="Số lớn nhất là: " + number3;
+        }
+    }
+</script>
+
+</body>
+</html>
