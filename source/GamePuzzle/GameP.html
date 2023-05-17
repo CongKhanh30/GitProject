@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .img-styles > img{
+      width: 100%;
+      border: 2px solid #000;
+    }
+    .img-styles {
+      width: 45%;
+    }
+    img {
+      box-shadow: red 4px 4px 9px;
+    }
+  </style>
+</head>
+<body>
+<div class="img-styles">
+  <img id="img1" onclick="img_convert(index=1)" src="img/funny-cat1_part1x1.jpg" alt="cat">
+  <img id="img2" onclick="img_convert(index=2)" src="img/funny-cat1_part2x1.jpg" alt="cat">
+  <img id="img3" onclick="img_convert(index=3)" src="img/funny-cat1_part3x1.jpg" alt="cat">
+  <img id="img4" onclick="img_convert(index=4)" src="img/funny-cat1_part4x1.jpg" alt="cat">
+  <img id="img5" onclick="img_convert(index=5)" src="img/funny-cat1_part5x1.jpg" alt="cat">
+</div>
+</body>
+<script>
+  function img_convert(index){
+    let img = document.getElementById('img' + index);
+    let src = img.getAttribute('src')
+    if (src === `img/funny-cat1_part${index}x1.jpg`) {
+      src = `img/monkey_part${index}x1.jpg`
+      img.setAttribute('alt', 'monkey')
+    } else if (src === `img/monkey_part${index}x1.jpg`) {
+      src = `img/panda_swap_part${index}x1.jpg`
+      img.setAttribute('alt', 'panda')
+    } else {
+      src = `img/funny-cat1_part${index}x1.jpg`
+      img.setAttribute('alt', 'cat')
+    }
+    img.setAttribute('src', src)
+    check_img()
+
+  }
+  function check_img(){
+    let check_img = true
+    for (let  i=1; i < 5; i++) {
+      let img1 = document.getElementById('img' + i);
+      let img2 = document.getElementById('img' + (i + 1));
+      if (img1.alt !== img2.alt) {
+        check_img = false;
+      }
+    }
+    if (check_img) {
+      $('img').css("box-shadow", "4px 4px 9px red")
+      $('img').css("border", "2px solid white")
+    }
+    else {
+      $('img').css("border", "1px solid black")
+      $('img').css("box-shadow", "2px 3px 3px black")
+    }
+  }
+</script>
+</html>

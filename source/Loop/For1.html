@@ -4,15 +4,42 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<style>
+    h1{
+        position:absolute;
+        left:220px;
+        top:175px;
+    }
+
+    #bthYes{
+        position: absolute;
+        left:285px;
+        top:243px;
+    }
+    #btnNo{
+        position: relative;
+        left:360px;
+        top:235px;
+    }
+</style>
 <body>
+<h1> Do you love me?</h1>
+<button id="bthYes" onclick="yesClick()">Yes</button>
+<button id="btnNo" onmouseover="noHover()">No</button>
 
 </body>
 <script>
-  let n = +prompt("Nhập 1 số: ")
-  let sum = 0;
-  for (let i = 1; i <= n; i +=1) {
-    sum = sum + i;
-  }
-  alert(sum);
+    let count = 0;
+    function yesClick() {
+        alert(" I love you too <3 ");
+    }
+    function noHover() {
+        let x = Math.round(Math.random() * window.innerWidth)
+        let y = Math.round(Math.random() * window.innerHeight)
+        document.getElementById("btnNo").style.left = x + "px";
+        document.getElementById("btnNo").style.top = y + "px";
+        count++;
+
+    }
 </script>
 </html>
