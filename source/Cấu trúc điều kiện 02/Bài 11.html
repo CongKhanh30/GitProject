@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thuế thu nhập cá nhân</title>
+</head>
+<body>
+
+</body>
+<script>
+  let luong = +prompt("Nhập lương cá nhân")
+  let thang = +prompt("nhập tháng")
+  if (luong <= 5000000){
+    thue = luong * 5 / 100
+    alert(`Số thuế phải đóng trong tháng ${thang} là: ${thue} đồng`)
+  }else if (luong > 5000000 && luong <= 10000000){
+    thue = luong * 10 / 100 + 250000
+    alert(`Số thuế phải đóng trong tháng ${thang} là: ${thue} đồng`)
+  }else if (luong > 10000000 && luong <= 18000000){
+    thue = luong * 15 / 100 + 750000
+    alert(`Số thuế phải đóng trong tháng ${thang} là: ${thue} đồng`)
+  }else if (luong > 18000000 && luong <= 32000000){
+    thue = luong * 20 / 100 + 1650000
+    alert(`Số thuế phải đóng trong tháng ${thang} là: ${thue} đồng`)
+  }else if (luong > 32000000 && luong <= 52000000){
+    thue = luong * 25 / 100 + 3250000
+    alert(`Số thuế phải đóng trong tháng ${thang} là: ${thue} đồng`)
+  }else if (luong > 52000000 && luong <= 80000000){
+    thue = luong * 30 / 100 + 5850000
+    alert(`Số thuế phải đóng trong tháng ${thang} là: ${thue} đồng`)
+  }else if (luong > 80000000){
+    thue = luong * 35 / 100 + 9850000
+    alert(`Số thuế phải đóng trong tháng ${thang} là: ${thue} đồng`)
+  }else{
+    alert(`Nhập Sai lương`)
+  }
+</script>
+</html>

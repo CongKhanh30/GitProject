@@ -7,5 +7,32 @@
 <body>
 
 </body>
+<script>
+    let a = prompt("Nhập a")
+    let b = prompt("Nhập b")
+    let c = prompt("Nhập c")
+    delta =  Math.pow(b, 2) - 4 * a * c
 
+    if( a == 0)
+        if ( b == 0 && c == 0 ){
+            alert("Phương trình bậc 2 vô số nghiệm")
+        } else if( b ==0 && c != 0){
+            alert("Phương trình bậc 2 vô nghiệm")
+        } else {
+            x = -c / b
+            alert("Phương trình bậc 2 có 1 nghiệm: X = " + x)
+        }
+    else{
+        if (delta > 0){
+            x1 = (-b + Math.sqrt(delta)) / (2 * a)
+            x2 = (-b - Math.sqrt(delta)) / (2 * a)
+            alert("Phương trình có 2 nghiệm phân biệt: X1 = " + x1 + ", X2 =" + x2)
+        } else if (delta == 0){
+            x = -b / (2 * a)
+            C("Phương trình có nghiệm kép X = " +x)
+        }   else{
+            alert("Phương trình vô nghiệm")
+        }
+    }
+</script>
 </html>
