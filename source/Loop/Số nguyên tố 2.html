@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+
+<script>
+    function checkPrimeNumber(x) {
+        let check = true;
+        if (x<2){
+            check = false
+        }
+        for (let i=2 ;i<=(x-1); i++ ){
+            if(x%i==0){
+                check = false
+            }
+        }
+        if (check == true){
+            return true
+        }
+        else{
+            return false
+        }
+    }
+
+    const numberOfPrimeNumbers = parseInt(prompt("Enter number of prime numbers: "));
+    for (let count = 1, i = 1; count <= numberOfPrimeNumbers; ++i) {
+
+        if (checkPrimeNumber(i) == true) {
+            document.writeln(i);
+            count++;
+        }
+    }
+
+    document.write('<br>');
+</script>
+</html>
