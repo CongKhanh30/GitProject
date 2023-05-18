@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let numbers = [-3, 5, 1, 3, 2, 10];
+    let sum = 0;
+    let count = 0;
+    // for (let i = 0; i < numbers.length; i++) {
+    //     if (numbers[i] %2 == 0) {
+    //         sum += numbers[i];
+    //         count++;
+    //     }
+    // }
+    // ave = sum/count;
+    // alert("Trung bình cộng các số chẵn là: " + ave);
+
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] %2 != 0) {
+            sum += numbers[i];
+            count++;
+        }
+    }
+    ave = sum/count;
+    alert("Trung bình cộng các số lẻ là: " + ave);
+
+
+
+</script>
+</html>
