@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let number1 = [9, 2, 11, 15];
+    let number2 = [11, 3, 7, 9];
+    let n = number1.length;
+    let m = number2.length;
+
+    for (let i=0; i<n ;i++){
+        let check = false;
+        for (let j=0; j<m ;j++) {
+            if (number1[i] == number2[j]) {
+                check = true;
+            }
+        }
+        if(check == false){
+            document.write(number1[i]+ "<br>");
+        }
+    }
+
+
+
+</script>
+</html>
