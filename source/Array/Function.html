@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // Bài 1
+    // let Color = ["Red", "Green", "White", "Black"];
+    // let result = Color.join(", ");
+    //
+    // document.write(result);
+
+    // Bài 2
+    // let num=window.prompt();
+    // let string = num.toString();
+    // let result = [string[0]];
+    // for (let i = 1; i < string.length; i++){
+    //     if ((string[i-1]%2 === 0)&&(string[i]%2 === 0)){
+    //             result.push('-', string[i]);
+    //     }
+    //     else {
+    //             result.push(string[i]);
+    //     }
+    // }
+    //
+    // console.log(result.join(''));
+
+    // Bài 3
+
+    str = 'The Quick Brown Fox';
+    let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    let result = [];
+
+    for(let i=0; i<str.length; i++)
+    {
+        if(UPPER.indexOf(str[i]) !== -1)
+        {
+            result.push(str[i].toLowerCase());
+        }
+        else if(LOWER.indexOf(str[i]) !== -1)
+        {
+            result.push(str[i].toUpperCase());
+        }
+        else
+        {
+            result.push(str[i]);
+        }
+    }
+    console.log(result.join(''));
+
+</script>
+</html>

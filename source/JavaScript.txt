@@ -3,6 +3,8 @@ https://github.com/trinhthuc2t/btth
 https://github.com/havehope1101/GitProject/tree/main/baitap.05-15
 https://github.com/Huynh0311/bt-chieu
 
+https://hocjavascript.net/ham/ham-indexof-trong-javascript/
+
 Debugger tại 1 vị trí cụ thể trong code, 
 sau đó ra trình duyệt f12 để mở và f5 sau đó chạy chương trình
 
