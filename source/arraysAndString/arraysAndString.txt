@@ -1,0 +1,11 @@
+1. myStr = "You guys try to do the exercises because doing more exercises helps us understand the theory and solve problems better"
+- Viết chương trình đếm số từ trong chuỗi trên.
+- Viết chương trình tìm từ dài nhất và số chữ cái trong từ đó.
+- Viết chương trình đếm số từ xuất hiện nhiều nhất trong chuỗi trên.
+- Viết chương trình đếm số chữ cái xuất hiện nhiều nhất trong chuỗi trên.
+2. myArr = [1, 2, 2, 7, 8, 8, 8]
+- Viết CT tìm phần tử xuất hiện nhiều nhất và số lần xuất hiện của phần tử đó => 8: 3
+- Viết CT loại bỏ các phần tử trùng lặp trong mảng => [1, 2, 7, 8]
+3. Yêu cầu người dùng nhập họ tên vào ô input, sau đó đọc và in ra họ tên người đó đúng chính tả.
+VD nhập vào: "  nGUyeN   vAn     dAT " => chỉnh sửa và in ra: "Nguyen Van Dat"
+
