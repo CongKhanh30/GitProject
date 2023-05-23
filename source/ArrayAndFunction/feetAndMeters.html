@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="inputFeet" onchange="convertFoot(this.value)" oninput="convertFoot(this.value)" placeholder="Nhập foot">
+
+<br><p id="resultFoot"></p>
+
+<input type="number" id = "inputFoot" onchange="convertMeter(value)" oninput="convertMeter(value)" placeholder="Nhập meter">
+
+<p id="resultMeter"></p>
+</body>
+</html>
+<script>
+    function convertFoot(value) {
+        value = parseFloat(value)
+        document.getElementById("resultFoot").innerHTML = "Foot = " + (value * 0.305) + " meter"
+    }
+
+    function convertMeter(value) {
+        value = parseFloat(value)
+        document.getElementById("resultMeter").innerHTML = "Meter = " + (value * 3.279) + " foot"
+    }
+</script>
