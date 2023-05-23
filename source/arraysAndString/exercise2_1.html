@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex2.1</title>
+</head>
+<body>
+<h2>Tìm phần tử xuất hiện nhiều nhất và số lần xuất hiện của phần tử đó trong 1 mảng</h2>
+</body>
+<script>
+    function findMostFrequentElement(arr) {
+        let frequency = {}; //số lần xuất hiện của mỗi phần tử trong mảng
+        let maxCount = 0;   //phần tử xuất hiện nhiều nhất
+        let mostFrequentElement = null; //số lần xuất hiện của maxCount
+
+        for (let i = 0; i < arr.length; i++) {
+            let element = arr[i];
+            frequency[element] = (frequency[element] || 0) + 1;
+            // Duyệt từng phần tử trong mảng arr.
+            // Đối với mỗi phần tử được duyệt, ta tăng giá trị tương ứng trong frequency bằng 1.
+            if (frequency[element] > maxCount) {
+                maxCount = frequency[element];
+                mostFrequentElement = element;
+            }
+            // Nếu số lần xuất hiện của phần tử đó vượt qua maxCount,
+            // Ta cập nhật maxCount và mostFrequentElement thành phần tử đó.
+        }
+
+        return {
+            element: mostFrequentElement,
+            count: maxCount
+        };
+    }
+
+    let myArr = [1, 2, 2, 7, 8, 8, 8];
+    let result = findMostFrequentElement(myArr);
+    console.log("Phần tử xuất hiện nhiều nhất là: " + result.element);
+    console.log("Số lần xuất hiện: " + result.count);
+</script>
+</html>

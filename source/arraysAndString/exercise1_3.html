@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex1.3</title>
+</head>
+<body>
+<h2>Đếm số từ xuất hiện nhiều nhất trong chuỗi</h2>
+</body>
+<script>
+    let myStr = "You guys try to do the exercises because doing more exercises helps us understand the theory and solve problems better";
+
+    function countMostFrequentWords(str) {
+        let wordArray = str.toLowerCase().trim().split(/\s+/);
+        let wordCountMap = {};
+        let maxCount = 0;
+
+        for (let i = 0; i < wordArray.length; i++) {
+            let word = wordArray[i];
+            wordCountMap[word] = (wordCountMap[word] || 0) + 1;
+
+            if (wordCountMap[word] > maxCount) {
+                maxCount = wordCountMap[word];
+            }
+        }
+
+        let mostFrequentWords = [];
+        for (let word in wordCountMap) {
+            if (wordCountMap[word] === maxCount) {
+                mostFrequentWords.push(word);
+            }
+        }
+
+        return {
+            count: maxCount,
+            words: mostFrequentWords
+        };
+    }
+
+    let result = countMostFrequentWords(myStr);
+    console.log("Số từ xuất hiện nhiều nhất: " + result.count);
+    console.log("Các từ xuất hiện nhiều nhất: " + result.words.join(", "));
+
+</script>
+</html>

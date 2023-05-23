@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số chữ cái C</title>
+</head>
+<body>
+
+</body>
+<script>
+    str = "CodeGym C04"
+    let arr = str.split('');
+    function findword(arr, b){
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            let word1 = arr[i];
+
+            if (word1 == b) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+    let result = findword(arr, 'C');
+    console.log(result);
+
+</script>
+</html>

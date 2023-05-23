@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex1.2</title>
+</head>
+<body>
+<h2>Tìm từ dài nhất và số chữ cái trong từ đó</h2>
+</body>
+<script>
+  let myStr = "You guys try to do the exercises because doing more exercises helps us understand the theory and solve problems better";
+
+  function findLongestWord(str) {
+    let wordArray = str.trim().split(/\s+/);
+    let longestWord = '';
+    let maxLetters = 0;
+
+    for (let i = 0; i < wordArray.length; i++) {
+      let word = wordArray[i];
+      let letterCount = word.length;
+
+      if (letterCount > maxLetters) {
+        longestWord = word;
+        maxLetters = letterCount;
+      //Duyệt qua từng từ trong mảng và kiểm tra độ dài của từ đó.
+      //Nếu độ dài của từ lớn hơn maxLetters, ta cập nhật longestWord thành từ đó và maxLetters thành độ dài của từ đó.
+      }
+    }
+
+    return {
+      word: longestWord,
+      letterCount: maxLetters
+    };
+  }
+
+  let result = findLongestWord(myStr);
+  console.log("Từ dài nhất là: " + result.word);
+  console.log("Số chữ cái trong từ đó là: " + result.letterCount);
+
+</script>
+</html>

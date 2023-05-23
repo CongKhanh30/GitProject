@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra 1 chuỗi có đối xứng không</title>
+</head>
+<body>
+
+</body>
+<script>
+  function symmetry(arr) {
+
+    for (let i = 0; i < (arr.length)/2; i++) {
+      if (arr[i] !== arr[(arr.length) - 1 - i]) {
+        return false;
+      }
+    }
+    return true
+  }
+  let arr1 = "abccba";
+  console.log(symmetry(arr1));
+</script>
+</html>

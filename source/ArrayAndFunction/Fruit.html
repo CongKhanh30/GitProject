@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fruit</title>
+</head>
+<body>
+</body>
+<script>
+    let arr = ["Táo", "Lê", "Táo", "Mít", "Xoài"];
+
+    // Liệt kê các loại quả trong mảng:
+
+    //Cách 1:
+    // let elementCount = [];
+    // for (let i = 0; i < fruit.length; i++){
+    //     let element = fruit[i];
+    //     if(!elementCount.includes(element)){
+    //         elementCount.push(element)
+    //     }
+    // }
+    // console.log(elementCount);
+
+    //Cách 2:
+    // let result = [];
+    // for (let i = 0; i < arr.length; i++){
+    //     if(result.indexOf(arr[i]) === -1){
+    //         result.push(arr[i]);
+    //     }
+    // }
+    // console.log(result);
+
+    //Thống kê số lượng mỗi loại:
+
+
+    function countFruits(arr) {
+        let count = [];
+
+        for (let i = 0; i < arr.length; i++) {
+            let fruit = arr[i];
+
+            if (count[fruit]) {
+                count[fruit]++;
+            } else {
+                count[fruit] = 1;
+            }
+        }
+
+        return count;
+    }
+
+    let result = countFruits(arr);
+    console.log(result);
+    const valuesArray = Object.values(result);
+    console.log(valuesArray);
+
+    //Tìm loại có số lượng max:
+
+
+
+
+
+
+</script>
+</html>

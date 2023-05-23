@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex1.1</title>
+</head>
+<body>
+<h2>Đếm số từ trong chuỗi</h2>
+</body>
+<script>
+    let myStr = "You guys try to do the exercises because doing more exercises helps us understand the theory and solve problems better";
+
+    function count(str) {
+        let wordArray = str.trim().split(/\s+/);
+        // .trim(): Loại bỏ khoảng trắng ở đầu và cuối chuỗi.
+        // .split(/\s+/): Tách chuỗi thành một mảng các từ
+        return wordArray.length;
+        // wordArray.length: Trả về độ dài của mảng, tức là số từ trong chuỗi.
+    }
+
+    let word = count(myStr);
+    console.log("Số từ trong chuỗi là: " + word);
+
+</script>
+</html>
