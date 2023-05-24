@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPalindrome(arr) {
+        if (arr[0] != arr[arr.length - 1]) {
+            return false;
+        } else {    if(arr.length==0){
+            return true;
+
+        } else {
+
+            return isPalindrome(arr.slice(1, [arr.length - 1]));
+        }
+        }
+    }
+
+    let a = isPalindrome(["r","e","d","e","e","d","e","r"]);
+    document.writeln(a);
+</script>
+</body>
+</html>
