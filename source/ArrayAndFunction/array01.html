@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  // Exercise 1:
+  let n = [4, 6, 7, 8, 15, 20, 30, 40, 1, 8]
+  let ht = []
+  for(i = 0; i < n.length; i++){
+    if(n[i] >= 10){
+      ht.push(n[i])
+    }
+  }
+  document.write(ht)
+
+  // Ex 2:
+  let n = [4, 6, 7, 8, 15, 20, 30, 40, 1, 8]
+  let max = n[0]
+  let t = 0
+  for (let i = 1; i <= n.length; i++) {
+    if (n[i] > max){
+      max = n[i]
+      t = i
+    }
+  }
+  document.write("số lớn nhất là: " + max + " ở vị trí thứ " + t)
+
+  // Ex 3:
+  let n = [4, 6, 7, 8, 15, 20, 30, 40, 1, 8]
+  let max = 0
+  let t = 0
+  let sum = 0
+  let count = 0
+  for (let i = 0; i < n.length; i++) {
+    if (n[i] > max){
+      max = n[i]
+      t = i
+    }
+    sum = sum + n[i];
+    count = count + 1
+  }
+  let avg = sum / count
+  document.write("Số lớn nhất là: " + max + " ở vị trí thứ " + t + '<br/>')
+  document.write("Trung bình cộng các số trong mảng là: " + avg)
+
+  // Ex 4:
+  let arr = [];
+  let n = parseInt(prompt("Nhập số lượng phần tử của mảng:"));
+  for (let i = 0; i < n; i++) {
+    let num = parseInt(prompt("Nhập phần tử thứ " + (i + 1) + ":"));
+    arr.push(num);
+  }
+  document.write("Mảng nhập vào là: ", arr);
+  arr.reverse();
+  document.write("<br>" + "Mảng sau khi đảo ngược:", arr);
+
+  // Ex 5:
+  let arr = []
+  let count = 0
+  n = prompt("nhập số lượng phần tử của mảng")
+  for( i = 0; i < n; i++ ){
+    let num = parseInt(prompt("nhập vào số thứ "+ (i+1) + " :"))
+    arr.push( num )
+  }
+  document.write("mảng vừa nhập vào là: " + arr+"<br/>")
+  for( j = 0; j < arr.length; j++ ){
+    if( arr[j] < 0 ){
+      count = count + 1
+
+    }
+  }
+  document.write("có " + count + " số nguyên âm có trong chuỗi")
+
+  // Ex 6:
+  let arr = []
+  n = 10
+  for( i = 0; i < n; i++ ){
+    let num = parseInt(prompt("nhập vào số thứ "+ (i+1) + " :"))
+    arr.push( num )
+  }
+  v = parseInt(prompt("nhập số V:"))
+  if ( arr.includes(v)){
+    document.write("V is in the array")
+  }else{
+    document.write("V is not in the array")
+  }
+
+  // Ex 7:
+  let arr = []
+  n = 10
+
+  for( i = 0; i < n; i++ ){
+    let num = parseInt(prompt("nhập vào số thứ "+ (i+1) + " :"))
+    arr.push( num )
+  }
+  v = parseInt(prompt("nhập số V:"))
+  document.write("Mảng nhập vào là: " + arr + "<br/>");
+
+  if ( arr.includes(v)){
+    arr = arr.filter(function(element) {
+      return element !== v;
+    });
+    arr.push(0);
+    document.write("Mảng sau khi xóa:", arr)
+  }else {
+    document.write("Số V: " + v + " không thuộc mảng trên")
+  }
+
+  // Ex 8:
+  let arr = []
+  n = 10
+  for( i = 0; i < n; i++ ){
+    let num = parseInt(prompt("nhập vào số thứ "+ (i+1) + " :"))
+    arr.push( num )
+  }
+  document.write("Mảng nhập vào là: " + arr + "<br/>");
+  arr.sort(function (a, b){
+    return b -a
+  });
+  document.write("Mảng sau khi sắp xếp:", arr);
+
+  // Ex 9:
+  let arrA = []
+  let arrB = []
+  let arrC = []
+  n = 10
+
+  for( i = 0; i < n; i++ ){
+    let numA = parseInt(prompt("nhập vào số thứ "+ (i+1) +" mảng A" + " :"))
+    arrA.push( numA )
+  }
+  for( j = 0; j < n; j++ ){
+    let numB = parseInt(prompt("nhập vào số thứ "+ (j+1) +" mảng B" + " :"))
+    arrB.push( numB )
+  }
+  document.write("Mảng nhập vào mảng A là: " + arrA + "<br/>");
+  document.write("Mảng nhập vào mảng B là: " + arrB + "<br/>");
+
+  arrC = arrA.concat(arrB);
+  document.write("Mảng C là: " + arrC + "<br/>");
+</script>
+
+
+</html>

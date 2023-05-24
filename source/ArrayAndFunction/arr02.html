@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  // Exercise 1:
+  let a = [
+    [1, 2, 1, 24],
+    [8, 11, 9, 4],
+    [7, 0, 7, 27],
+    [7, 4, 28, 14],
+    [3, 10, 26, 7]
+  ];
+  for(let i = 0; i < a.length; i++){
+    document.write("row " + i + "<br/>");
+    for (let j = 0; j < a[i].length; j++){
+      document.write(a[i][j] + "<br/>");
+    }
+  }
+
+  // Ex 2:
+  let a = [ 'c', 's', 'c', '2', '6', '1' ]
+  d = a.reverse()
+  document.write(d.join(''))
+
+  // Ex 3:
+  let a = "are you ready"
+  m = a.length
+  console.log(m)
+
+  // Ex 4:
+  let myStr = "You guys try to do the exercises because doing more exercises helps us understand the theory and solve problems better";
+  function count(str) {
+    let wordArray = str.trim().split(/\s+/);
+    // .trim(): Loại bỏ khoảng trắng ở đầu và cuối chuỗi.
+    // .split(/\s+/): Tách chuỗi thành một mảng các từ
+    return wordArray.length;
+    // wordArray.length: Trả về độ dài của mảng, tức là số từ trong chuỗi.
+  }
+
+  let word = count(myStr);
+  console.log("Số từ trong chuỗi là: " + word);
+  // Ex 5:
+  let a = [1, 2, 3, 4]
+  let b = [1, 2, 3, 4]
+  check = true
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] != b[i]) {
+      check = false
+    }
+  }
+  if (check == true) {
+    document.write("Chuỗi a giống chuỗi b")
+  }else {
+    document.write("Chuỗi a không giống chuỗi b")
+  }
+
+  // Ex 6:
+  let a = prompt("nhập vào chuỗi")
+  let b = a.split('')
+  for (i in b) {
+    if(b[i] === "-"){
+      b[i] = "_"
+    }
+  }
+  document.write(b.join(''))
+
+</script>
+</html>
