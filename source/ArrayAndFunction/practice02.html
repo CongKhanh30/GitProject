@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //Exercise 1:
+    let number = +prompt("Nhập vào 1 số: ");
+    function square(number) {
+        return number * number;
+    }
+    alert(square(number));
+    // Ex 2:
+    let r = +prompt("Nhập vào bán kính hình tròn: ");
+    function area(r) {
+        return Math.PI * r * r;
+    }
+
+    function perimeter(r) {
+        return Math.PI * 2 * r;
+    }
+    alert("Diện tích: " + area(r));
+    alert("Chu vi: " + perimeter(r));
+    // Ex 3:
+    let number = +prompt("Nhập vào 1 số: ");
+    function factorial(number) {
+        let fac = 1;
+        for (let i = number; i > 1; i--) {
+            fac *= i;
+        }
+        return fac;
+    }
+    alert(factorial(number));
+    // Ex 4:
+    let str = prompt("Enter: ")
+    function checkNumber(str) {
+        return !isNaN(parseInt(str));
+    }
+    alert(checkNumber(str));
+    // Ex 5:
+    function minArray(arr) {
+        if(arr.length == 0)
+            return false;
+        let min = arr[0];
+
+        for(let i = 1; i < arr.length; i++){
+            if(arr[i] < min){
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+    let arr1 = [3, 5, 7];
+    let min = minArray(arr1);
+    alert(min);
+    // Ex 6:
+    let number = +prompt("Nhập vào 1 số: ");
+    function integer(number){
+        return number >= 0;
+    }
+    alert(integer(number));
+    // Ex 7,8 :
+    let arr1 = [3,5];
+    function reverse(arr){
+        return arr.reverse();
+    }
+    alert(reverse(arr1));
+    // Ex 9 :
+    function count(arr, cha){
+        let count = 0;
+        for(let i = 1; i < arr.length; i++){
+                    if(arr[i] === cha){
+                       count++;
+                    }
+                }
+        return count > 0 ? count : -1;
+    }
+    let arr1 = ['3','5', '7', '9', '5','5','9'];
+    let cha1 = prompt("Nhập 1 số: ");
+    alert(count(arr1, cha1));
+
+
+
+</script>
+</html>
