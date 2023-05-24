@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  //Exercise 1:
+  function alertMessage(){
+    alert('Xin chào');
+  }
+
+  //Ex 2:
+  function argument(number){
+    return ++number;
+  }
+
+  //Ex 3:
+  let a = +prompt('Nhập vào số a: ');
+  let b = +prompt('Nhập vào số b: ');
+  function sum(a, b){
+    if(a > b) alert(`${a} > ${b}`);
+    else return a + b;
+  }
+  alert(sum(a,b));
+
+  //Ex 4:
+  function addNumbers() {
+    firstNum = 4;
+    secondNum = 8;
+    result = firstNum + secondNum;
+    return result;
+  }
+  result = 0;
+  alert(result);
+  result = addNumbers();
+  alert(result);
+
+  //Ex 5:
+  let stars = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulu'];
+  let constellations = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+  let str = prompt('Nhập vào ngôi sao: ');
+  function findStar(str) {
+    let find = stars.indexOf(str);
+    if (find == -1) {
+      return 'No stars found';
+    } else {
+      return constellations[find];
+    }
+  }
+  document.write(findStar(str));
+</script>
+</html>
