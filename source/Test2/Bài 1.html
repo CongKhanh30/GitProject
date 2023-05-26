@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Điểm thi cao thứ 3</title>
+</head>
+<body>
+
+</body>
+<script>
+
+  function find3(scores){
+      let max1 = 0;
+      let max2 = 0;
+      let max3 = 0;
+      for (let i = 0; i < scores.length; i++) {
+
+          if ( max1 < scores[i]){
+              max3 = max2;
+              max2 = max1;
+              max1 = scores[i];
+          }
+          else if (max2 < scores[i]) {
+              max3 = max2;
+              max2 = scores[i];
+          }
+          else if (max3 < scores[i]) {
+              max3 = scores[i];
+          }
+      }
+
+      return max3;
+  }
+  let scores = [10, 8, 6, 9, 7, 7, 10];
+  let thirdHighestScore = find3(scores);
+  document.write("Điểm cao thứ 3 là: " + thirdHighestScore);
+
+</script>
+</html>

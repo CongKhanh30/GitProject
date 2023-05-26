@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function checkSubstring(str1, str2) {
+        for (let i = 0; i <= str2.length - str1.length; i++) {
+            let j;
+            for (j = 0; j < str1.length; j++) {
+                if (str2[i + j] !== str1[j]) {
+                    break;
+                }
+            }
+            if (j === str1.length) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    let str1 = "abc";
+    let str2 = "abc def ghi";
+    console.log(checkSubstring(str1, str2));
+
+
+</script>
+</html>

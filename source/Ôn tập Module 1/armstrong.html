@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  function checkIfArmstrong(number) {
+
+    let sum  = 0;
+    let digits  = number.toString().length;
+    let temp = number;
+
+    while (temp > 0){
+      let lastDigit  = temp % 10;
+      sum = sum + lastDigit**digits;
+
+      temp = parseInt(temp/10);
+    }
+    return sum == number;
+  }
+
+  // console.log(checkIfArmstrong(153));
+
+  for (let i = 0; i <= 1000; i++){
+    if (checkIfArmstrong(i)){
+      console.log(i);
+    }
+  }
+</script>
+</html>
