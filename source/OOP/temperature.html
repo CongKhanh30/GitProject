@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+class Temperature {
+    constructor(celcius) {
+        this.celcius =celcius;
+    }
+    convertToF(){
+        return (this.celcius * 9) / 5 +32;
+    }
+    convertToK(){
+        return this.celcius + 273.15;
+    }
+}
+
+let temperature = new Temperature(25);
+const F = temperature.convertToF();
+const K = temperature.convertToK();
+
+console.log('Độ F: ' + F);
+console.log('Độ Kenvin: '+ K);
+</script>
+</html>
