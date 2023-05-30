@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function sap_xep_theo_tu_dien(danh_sach) {
+        let n = danh_sach.length;
+
+        for (let i = 0; i < n - 1; i++) {
+            let minIndex = i;
+
+            for (let j = i + 1; j < n; j++) {
+                if (danh_sach[j] < danh_sach[minIndex]) {
+                    minIndex = j;
+                }
+            }
+
+            if (minIndex !== i) {
+                // Swap elements
+                const temp = danh_sach[i];
+                danh_sach[i] = danh_sach[minIndex];
+                danh_sach[minIndex] = temp;
+            }
+        }
+
+        return danh_sach;
+    }
+    const danh_sach = ["captain", "ironMan", "hulk", "loki", "thor", "spiderman"];
+    const danh_sach_da_sap_xep = sap_xep_theo_tu_dien(danh_sach);
+    console.log("Danh sách sau khi được sắp xếp theo thứ tự từ điển:", danh_sach_da_sap_xep);
+
+</script>
+</html>

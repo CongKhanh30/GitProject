@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function tim_so_nguyen_to_lon_nhat(danh_sach) {
+        function isPrime(num) {
+            if (num < 2) {
+                return false;
+            }
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        let maxPrime = null;
+
+        for (let i = 0; i < danh_sach.length; i++) {
+            const currentNumber = danh_sach[i];
+            if (isPrime(currentNumber)) {
+                if (maxPrime === null || currentNumber > maxPrime) {
+                    maxPrime = currentNumber;
+                }
+            }
+        }
+
+        return maxPrime;
+    }
+
+    const danh_sach = [43, 61, 15, 23, 31, 12, 47, 29];
+    const max_prime = tim_so_nguyen_to_lon_nhat(danh_sach);
+    console.log("Số nguyên tố lớn nhất trong danh sách là:", max_prime);
+
+</script>
+</html>

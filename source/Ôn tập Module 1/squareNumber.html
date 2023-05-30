@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function tim_so_chinh_phuong_gan_nhat(n) {
+        function squareNum(num) {
+            const sqrt = Math.sqrt(num);
+            return sqrt === Math.floor(sqrt);
+        }
+
+        let nearest = null;
+
+        for (let i = n - 1; i > 0; i--) {
+            if (squareNum(i)) {
+                nearest = i;
+                break;
+            }
+        }
+
+        return nearest;
+    }
+    const n = 50;
+    const nearest = tim_so_chinh_phuong_gan_nhat(n);
+    document.write("Số chính phương gần nhất và nhỏ hơn ", n, " là ", nearest);
+
+</script>
+</html>
