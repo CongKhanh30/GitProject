@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 3</title>
+</head>
+<body>
+
+</body>
+<script>
+    function isPrime(number) {
+        let a = number;
+        if (a < 2) {
+            return false;
+        }
+        for (let i = 2; i <= (a - 1); i++) {
+            if (a % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function sumOfListPrime(x) {
+        let sum = 0;
+        for (let num = 0; num <= x; num++) {
+            if (isPrime(num)) {
+                sum += num
+            }
+        }
+        return sum;
+    }
+
+    document.write("Tổng các số nguyên tố là: " + sumOfListPrime(30));
+</script>
+</html>

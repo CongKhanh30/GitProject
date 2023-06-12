@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 1</title>
+</head>
+<body>
+
+</body>
+<script>
+    function findAvg(testScore) {
+        let sum = 0;
+        let avg = 0;
+        for (let i = 0; i < testScore.length; i++) {
+            sum += testScore[i];
+            avg = sum / testScore.length;
+        }
+        return avg;
+    }
+
+    let testScore = [10, 8, 10, 9, 10];
+    document.write("Điểm trung bình của danh sách điểm thi là: " + findAvg(testScore));
+</script>
+</html>
